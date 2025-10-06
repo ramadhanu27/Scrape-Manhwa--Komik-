@@ -236,48 +236,67 @@ class ManhwaIndoScraper {
 
                 // Scrape details if requested
                 if (includeDetails && manhwaList.length > 0) {
-                    console.log(`📝 Scraping details for ${manhwaList.length} manhwa (${parallelCount}x parallel)...`);
+                    // Filter manhwa yang belum ada details
+                    const manhwaToScrape = [];
+                    const startIndex = allManhwa.length - manhwaList.length;
                     
-                    // Create multiple pages for parallel scraping
-                    const pages = [this.page];
-                    for (let i = 0; i < parallelCount - 1; i++) {
-                        const newPage = await this.browser.newPage();
-                        await newPage.setViewport({ width: 1920, height: 1080 });
-                        pages.push(newPage);
+                    for (let i = 0; i < manhwaList.length; i++) {
+                        const index = startIndex + i;
+                        const manhwa = allManhwa[index];
+                        
+                        // Check if already has details (has genres or synopsis)
+                        if (!manhwa.genres && !manhwa.synopsis) {
+                            manhwaToScrape.push({ manhwa, index });
+                        }
                     }
                     
-                    // Process in batches
-                    const batchSize = parallelCount;
-                    for (let i = 0; i < manhwaList.length; i += batchSize) {
-                        const batch = manhwaList.slice(i, i + batchSize);
-                        const startIndex = allManhwa.length - manhwaList.length + i;
-                        
-                        // Scrape batch in parallel using different pages
-                        const detailsPromises = batch.map((manhwa, batchIndex) => {
-                            const index = startIndex + batchIndex;
-                            const page = pages[batchIndex % pages.length];
-                            return this.scrapeManhwaDetails(allManhwa[index].url, page);
-                        });
-                        
-                        const batchDetails = await Promise.all(detailsPromises);
-                        
-                        // Merge details
-                        batchDetails.forEach((details, batchIndex) => {
-                            const index = startIndex + batchIndex;
-                            if (details) {
-                                allManhwa[index] = { ...allManhwa[index], ...details };
-                            }
-                        });
-                        
-                        process.stdout.write(`\r   Details: ${Math.min(i + batchSize, manhwaList.length)}/${manhwaList.length}`);
+                    const skipped = manhwaList.length - manhwaToScrape.length;
+                    if (skipped > 0) {
+                        console.log(`   ⏭️  Skipped ${skipped} manhwa (already have details)`);
                     }
                     
-                    // Close additional pages
-                    for (let i = 1; i < pages.length; i++) {
-                        await pages[i].close();
+                    if (manhwaToScrape.length > 0) {
+                        console.log(`📝 Scraping details for ${manhwaToScrape.length} manhwa (${parallelCount}x parallel)...`);
+                        
+                        // Create multiple pages for parallel scraping
+                        const pages = [this.page];
+                        for (let i = 0; i < parallelCount - 1; i++) {
+                            const newPage = await this.browser.newPage();
+                            await newPage.setViewport({ width: 1920, height: 1080 });
+                            pages.push(newPage);
+                        }
+                        
+                        // Process in batches
+                        const batchSize = parallelCount;
+                        for (let i = 0; i < manhwaToScrape.length; i += batchSize) {
+                            const batch = manhwaToScrape.slice(i, i + batchSize);
+                            
+                            // Scrape batch in parallel using different pages
+                            const detailsPromises = batch.map((item, batchIndex) => {
+                                const page = pages[batchIndex % pages.length];
+                                return this.scrapeManhwaDetails(item.manhwa.url, page);
+                            });
+                            
+                            const batchDetails = await Promise.all(detailsPromises);
+                            
+                            // Merge details
+                            batchDetails.forEach((details, batchIndex) => {
+                                const item = batch[batchIndex];
+                                if (details) {
+                                    allManhwa[item.index] = { ...allManhwa[item.index], ...details };
+                                }
+                            });
+                            
+                            process.stdout.write(`\r   Details: ${Math.min(i + batchSize, manhwaToScrape.length)}/${manhwaToScrape.length}`);
+                        }
+                        
+                        // Close additional pages
+                        for (let i = 1; i < pages.length; i++) {
+                            await pages[i].close();
+                        }
+                        
+                        console.log('\n');
                     }
-                    
-                    console.log('\n');
                 }
 
                 // Check if there's a next page
@@ -320,6 +339,19 @@ class ManhwaIndoScraper {
             console.error('❌ Error scraping:', error.message);
             return [];
         }
+    }
+
+    async loadExistingData() {
+        try {
+            const outputFile = path.join(this.dataDir, 'manhwa-list.json');
+            if (await fs.pathExists(outputFile)) {
+                const data = await fs.readJSON(outputFile);
+                return data.manhwa || [];
+            }
+        } catch (error) {
+            console.log('   ℹ️  No existing data found, starting fresh');
+        }
+        return [];
     }
 
     async saveData(manhwaList) {
@@ -368,6 +400,12 @@ async function main() {
     try {
         await scraper.init(headless);
         
+        // Load existing data
+        const existingData = await scraper.loadExistingData();
+        if (existingData.length > 0) {
+            console.log(`📂 Loaded ${existingData.length} existing manhwa from cache\n`);
+        }
+        
         if (includeDetails) {
             console.log(`📖 Will scrape ${maxPages} pages WITH DETAILS (${parallelCount}x parallel, ${headless ? 'headless' : 'visible'})\n`);
         } else if (parallelPages) {
@@ -376,10 +414,38 @@ async function main() {
             console.log(`📖 Will scrape ${maxPages} pages (basic info only)\n`);
         }
         
-        const manhwaList = await scraper.scrapeManhwaList(maxPages, includeDetails, parallelPages, parallelCount);
+        const newManhwaList = await scraper.scrapeManhwaList(maxPages, includeDetails, parallelPages, parallelCount);
         
-        if (manhwaList.length > 0) {
-            await scraper.saveData(manhwaList);
+        if (newManhwaList.length > 0) {
+            // Merge with existing data (update or add new)
+            const mergedData = [...existingData];
+            const existingUrls = new Set(existingData.map(m => m.url));
+            
+            for (const newManhwa of newManhwaList) {
+                const existingIndex = mergedData.findIndex(m => m.url === newManhwa.url);
+                if (existingIndex >= 0) {
+                    // Update existing (merge data, keep details if already exist)
+                    mergedData[existingIndex] = {
+                        ...mergedData[existingIndex],
+                        ...newManhwa,
+                        // Keep existing details if new data doesn't have them
+                        genres: newManhwa.genres || mergedData[existingIndex].genres,
+                        synopsis: newManhwa.synopsis || mergedData[existingIndex].synopsis,
+                        status: newManhwa.status || mergedData[existingIndex].status,
+                        author: newManhwa.author || mergedData[existingIndex].author
+                    };
+                } else {
+                    // Add new
+                    mergedData.push(newManhwa);
+                }
+            }
+            
+            console.log(`\n📊 Summary:`);
+            console.log(`   - Total manhwa: ${mergedData.length}`);
+            console.log(`   - New scraped: ${newManhwaList.length}`);
+            console.log(`   - From cache: ${existingData.length}`);
+            
+            await scraper.saveData(mergedData);
         }
 
         console.log('\n' + '='.repeat(60));
