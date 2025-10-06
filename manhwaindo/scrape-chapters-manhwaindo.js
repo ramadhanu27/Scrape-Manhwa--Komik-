@@ -131,19 +131,21 @@ class ManhwaIndoChapterScraper {
         console.log('\n   ✅ Finished scrolling');
     }
 
-    async scrapeChapterImages(chapterUrl, chapterNum) {
+    async scrapeChapterImages(chapterUrl, chapterNum, page = null) {
         try {
+            const targetPage = page || this.page;
+            
             console.log(`   📡 Loading chapter ${chapterNum}: ${chapterUrl}`);
             
-            await this.page.goto(chapterUrl, { 
+            await targetPage.goto(chapterUrl, { 
                 waitUntil: 'networkidle2',
                 timeout: 60000 
             });
 
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            await new Promise(resolve => setTimeout(resolve, 1500));
 
             // Extract image URLs
-            const images = await this.page.evaluate(() => {
+            const images = await targetPage.evaluate(() => {
                 const imageElements = document.querySelectorAll('#readerarea img');
                 
                 return Array.from(imageElements).map((img, index) => ({
@@ -232,6 +234,19 @@ class ManhwaIndoChapterScraper {
         });
     }
 
+    async loadExistingChapters(manhwaSlug) {
+        try {
+            const outputFile = path.join(this.chaptersDir, `${manhwaSlug}.json`);
+            if (await fs.pathExists(outputFile)) {
+                const data = await fs.readJSON(outputFile);
+                return data.chapters || [];
+            }
+        } catch (error) {
+            // No existing data
+        }
+        return [];
+    }
+
     async saveChapterData(manhwaSlug, manhwaTitle, chapters) {
         try {
             await fs.ensureDir(this.chaptersDir);
@@ -269,6 +284,7 @@ async function main() {
     const args = process.argv.slice(2);
     const maxManhwa = args[0] ? parseInt(args[0]) : 1;
     const maxChaptersPerManhwa = args[1] === 'all' ? null : (args[1] ? parseInt(args[1]) : 3);
+    const parallelCount = args[2] && !isNaN(parseInt(args[2])) ? parseInt(args[2]) : 5; // Default 5x parallel
 
     const scraper = new ManhwaIndoChapterScraper();
 
@@ -301,39 +317,94 @@ async function main() {
                 continue;
             }
 
+            // Load existing chapters
+            const slug = manhwa.url.split('/').filter(Boolean).pop();
+            const existingChapters = await scraper.loadExistingChapters(slug);
+            const existingChapterNumbers = new Set(existingChapters.map(ch => ch.number));
+
             // Limit chapters if specified
             const limit = maxChaptersPerManhwa ? Math.min(maxChaptersPerManhwa, allChapters.length) : allChapters.length;
-            const chaptersToScrape = allChapters.slice(0, limit);
+            const limitedChapters = allChapters.slice(0, limit);
+            
+            // Filter out chapters that already exist
+            const chaptersToScrape = limitedChapters.filter(ch => !existingChapterNumbers.has(ch.number));
+            
+            const skipped = limitedChapters.length - chaptersToScrape.length;
+            if (skipped > 0) {
+                console.log(`   ⏭️  Skipped ${skipped} chapters (already downloaded)`);
+            }
+            
+            if (chaptersToScrape.length === 0) {
+                console.log(`   ✅ All chapters already downloaded, skipping...\n`);
+                continue;
+            }
 
-            console.log(`📖 Will download ${limit} chapters\n`);
+            console.log(`📖 Will download ${chaptersToScrape.length} chapters (${parallelCount}x parallel)\n`);
+
+            // Create multiple pages for parallel scraping
+            const pages = [scraper.page];
+            for (let p = 0; p < parallelCount - 1; p++) {
+                const newPage = await scraper.browser.newPage();
+                await newPage.setViewport({ width: 1920, height: 1080 });
+                pages.push(newPage);
+            }
 
             const scrapedChapters = [];
 
-            for (let j = 0; j < chaptersToScrape.length; j++) {
-                const chapter = chaptersToScrape[j];
-                console.log(`\n   📖 Chapter ${chapter.number} (${j + 1}/${limit})`);
-
-                const images = await scraper.scrapeChapterImages(chapter.url, chapter.number);
+            // Process chapters in batches (parallel)
+            const batchSize = parallelCount;
+            for (let j = 0; j < chaptersToScrape.length; j += batchSize) {
+                const batch = chaptersToScrape.slice(j, j + batchSize);
                 
-                if (images.length > 0) {
-                    const downloadedImages = await scraper.downloadChapterImages(images, manhwa.title, chapter.number);
-                    
-                    scrapedChapters.push({
-                        ...chapter,
-                        totalPages: downloadedImages.length,
-                        images: downloadedImages,
-                        scrapedAt: new Date().toISOString()
-                    });
+                console.log(`\n   📦 Processing batch ${Math.floor(j / batchSize) + 1} (${batch.length} chapters)...`);
+                
+                // Scrape chapters in parallel
+                const chapterPromises = batch.map((chapter, batchIndex) => {
+                    const page = pages[batchIndex % pages.length];
+                    return scraper.scrapeChapterImages(chapter.url, chapter.number, page)
+                        .then(images => ({ chapter, images }));
+                });
+                
+                const batchResults = await Promise.all(chapterPromises);
+                
+                // Download images for each chapter
+                for (const result of batchResults) {
+                    if (result.images.length > 0) {
+                        console.log(`\n   📖 Chapter ${result.chapter.number}: ${result.images.length} images`);
+                        const downloadedImages = await scraper.downloadChapterImages(result.images, manhwa.title, result.chapter.number);
+                        
+                        scrapedChapters.push({
+                            ...result.chapter,
+                            totalPages: downloadedImages.length,
+                            images: downloadedImages,
+                            scrapedAt: new Date().toISOString()
+                        });
 
-                    console.log(`   ✅ Chapter ${chapter.number} complete: ${downloadedImages.length} pages`);
+                        console.log(`   ✅ Chapter ${result.chapter.number} complete: ${downloadedImages.length} pages`);
+                    }
                 }
+            }
 
-                await new Promise(resolve => setTimeout(resolve, 500));
+            // Close additional pages
+            for (let p = 1; p < pages.length; p++) {
+                await pages[p].close();
             }
 
             if (scrapedChapters.length > 0) {
-                const slug = manhwa.url.split('/').filter(Boolean).pop();
-                await scraper.saveChapterData(slug, manhwa.title, scrapedChapters);
+                // Merge with existing chapters
+                const allScrapedChapters = [...existingChapters, ...scrapedChapters];
+                
+                // Sort by chapter number (descending)
+                allScrapedChapters.sort((a, b) => parseInt(b.number) - parseInt(a.number));
+                
+                console.log(`\n📊 Summary:`);
+                console.log(`   - New chapters: ${scrapedChapters.length}`);
+                console.log(`   - Existing chapters: ${existingChapters.length}`);
+                console.log(`   - Total chapters: ${allScrapedChapters.length}`);
+                
+                await scraper.saveChapterData(slug, manhwa.title, allScrapedChapters);
+            } else if (existingChapters.length > 0) {
+                console.log(`\n   ℹ️  No new chapters to save (all already exist)`);
             }
         }
 

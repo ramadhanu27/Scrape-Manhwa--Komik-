@@ -1,0 +1,880 @@
+{
+  "manhwaSlug": "the-player-who-returned-10000-years-later",
+  "manhwaTitle": "The Player Who Returned 10,000 Years Later",
+  "totalChapters": 5,
+  "chapters": [
+    {
+      "number": "130",
+      "title": "Chapter 130",
+      "url": "https://manhwaindo.app/the-player-who-returned-10000-years-later-chapter-130/",
+      "date": "Oktober 6, 2025",
+      "totalPages": 41,
+      "images": [
+        {
+          "page": 1,
+          "filename": "page-001.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-001.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/1.webp"
+        },
+        {
+          "page": 2,
+          "filename": "page-002.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-002.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/2.webp"
+        },
+        {
+          "page": 3,
+          "filename": "page-003.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-003.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/3.webp"
+        },
+        {
+          "page": 4,
+          "filename": "page-004.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-004.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/4.webp"
+        },
+        {
+          "page": 5,
+          "filename": "page-005.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-005.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/5.webp"
+        },
+        {
+          "page": 6,
+          "filename": "page-006.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-006.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/6.webp"
+        },
+        {
+          "page": 7,
+          "filename": "page-007.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-007.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/7.webp"
+        },
+        {
+          "page": 8,
+          "filename": "page-008.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-008.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/8.webp"
+        },
+        {
+          "page": 9,
+          "filename": "page-009.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-009.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/9.webp"
+        },
+        {
+          "page": 10,
+          "filename": "page-010.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-010.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/10.webp"
+        },
+        {
+          "page": 11,
+          "filename": "page-011.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-011.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/11.webp"
+        },
+        {
+          "page": 12,
+          "filename": "page-012.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-012.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/12.webp"
+        },
+        {
+          "page": 13,
+          "filename": "page-013.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-013.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/13.webp"
+        },
+        {
+          "page": 14,
+          "filename": "page-014.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-014.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/14.webp"
+        },
+        {
+          "page": 15,
+          "filename": "page-015.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-015.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/15.webp"
+        },
+        {
+          "page": 16,
+          "filename": "page-016.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-016.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/16.webp"
+        },
+        {
+          "page": 17,
+          "filename": "page-017.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-017.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/17.webp"
+        },
+        {
+          "page": 18,
+          "filename": "page-018.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-018.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/18.webp"
+        },
+        {
+          "page": 19,
+          "filename": "page-019.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-019.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/19.webp"
+        },
+        {
+          "page": 20,
+          "filename": "page-020.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-020.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/20.webp"
+        },
+        {
+          "page": 21,
+          "filename": "page-021.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-021.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/21.webp"
+        },
+        {
+          "page": 22,
+          "filename": "page-022.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-022.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/22.webp"
+        },
+        {
+          "page": 23,
+          "filename": "page-023.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-023.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/23.webp"
+        },
+        {
+          "page": 24,
+          "filename": "page-024.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-024.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/24.webp"
+        },
+        {
+          "page": 25,
+          "filename": "page-025.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-025.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/25.webp"
+        },
+        {
+          "page": 26,
+          "filename": "page-026.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-026.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/26.webp"
+        },
+        {
+          "page": 27,
+          "filename": "page-027.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-027.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/27.webp"
+        },
+        {
+          "page": 28,
+          "filename": "page-028.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-028.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/28.webp"
+        },
+        {
+          "page": 29,
+          "filename": "page-029.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-029.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/29.webp"
+        },
+        {
+          "page": 30,
+          "filename": "page-030.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-030.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/30.webp"
+        },
+        {
+          "page": 31,
+          "filename": "page-031.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-031.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/31.webp"
+        },
+        {
+          "page": 32,
+          "filename": "page-032.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-032.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/32.webp"
+        },
+        {
+          "page": 33,
+          "filename": "page-033.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-033.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/33.webp"
+        },
+        {
+          "page": 34,
+          "filename": "page-034.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-034.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/34.webp"
+        },
+        {
+          "page": 35,
+          "filename": "page-035.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-035.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/35.webp"
+        },
+        {
+          "page": 36,
+          "filename": "page-036.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-036.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/36.webp"
+        },
+        {
+          "page": 37,
+          "filename": "page-037.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-037.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/37.webp"
+        },
+        {
+          "page": 38,
+          "filename": "page-038.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-038.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/38.webp"
+        },
+        {
+          "page": 39,
+          "filename": "page-039.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-039.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/39.webp"
+        },
+        {
+          "page": 40,
+          "filename": "page-040.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-040.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/40.webp"
+        },
+        {
+          "page": 41,
+          "filename": "page-041.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-130/page-041.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-130/41.webp"
+        }
+      ],
+      "scrapedAt": "2025-10-06T05:11:38.472Z"
+    },
+    {
+      "number": "129",
+      "title": "Chapter 129",
+      "url": "https://manhwaindo.app/the-player-who-returned-10000-years-later-chapter-129/",
+      "date": "September 22, 2025",
+      "totalPages": 17,
+      "images": [
+        {
+          "page": 1,
+          "filename": "page-001.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-001.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/1.webp"
+        },
+        {
+          "page": 2,
+          "filename": "page-002.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-002.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/2.webp"
+        },
+        {
+          "page": 3,
+          "filename": "page-003.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-003.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/3.webp"
+        },
+        {
+          "page": 4,
+          "filename": "page-004.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-004.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/4.webp"
+        },
+        {
+          "page": 5,
+          "filename": "page-005.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-005.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/5.webp"
+        },
+        {
+          "page": 6,
+          "filename": "page-006.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-006.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/6.webp"
+        },
+        {
+          "page": 7,
+          "filename": "page-007.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-007.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/7.webp"
+        },
+        {
+          "page": 8,
+          "filename": "page-008.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-008.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/8.webp"
+        },
+        {
+          "page": 9,
+          "filename": "page-009.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-009.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/9.webp"
+        },
+        {
+          "page": 10,
+          "filename": "page-010.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-010.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/10.webp"
+        },
+        {
+          "page": 11,
+          "filename": "page-011.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-011.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/11.webp"
+        },
+        {
+          "page": 12,
+          "filename": "page-012.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-012.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/12.webp"
+        },
+        {
+          "page": 13,
+          "filename": "page-013.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-013.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/13.webp"
+        },
+        {
+          "page": 14,
+          "filename": "page-014.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-014.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/14.webp"
+        },
+        {
+          "page": 15,
+          "filename": "page-015.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-015.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/15.webp"
+        },
+        {
+          "page": 16,
+          "filename": "page-016.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-016.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/16.webp"
+        },
+        {
+          "page": 17,
+          "filename": "page-017.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-129/page-017.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-129/17.webp"
+        }
+      ],
+      "scrapedAt": "2025-10-06T05:11:40.874Z"
+    },
+    {
+      "number": "128",
+      "title": "Chapter 128",
+      "url": "https://manhwaindo.app/the-player-who-returned-10000-years-later-chapter-128/",
+      "date": "September 15, 2025",
+      "totalPages": 40,
+      "images": [
+        {
+          "page": 1,
+          "filename": "page-001.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-001.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/1.jpg"
+        },
+        {
+          "page": 2,
+          "filename": "page-002.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-002.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/2.jpg"
+        },
+        {
+          "page": 3,
+          "filename": "page-003.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-003.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/3.jpg"
+        },
+        {
+          "page": 4,
+          "filename": "page-004.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-004.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/4.jpg"
+        },
+        {
+          "page": 5,
+          "filename": "page-005.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-005.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/5.jpg"
+        },
+        {
+          "page": 6,
+          "filename": "page-006.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-006.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/6.jpg"
+        },
+        {
+          "page": 7,
+          "filename": "page-007.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-007.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/7.jpg"
+        },
+        {
+          "page": 8,
+          "filename": "page-008.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-008.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/8.jpg"
+        },
+        {
+          "page": 9,
+          "filename": "page-009.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-009.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/9.jpg"
+        },
+        {
+          "page": 10,
+          "filename": "page-010.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-010.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/10.jpg"
+        },
+        {
+          "page": 11,
+          "filename": "page-011.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-011.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/11.jpg"
+        },
+        {
+          "page": 12,
+          "filename": "page-012.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-012.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/12.jpg"
+        },
+        {
+          "page": 13,
+          "filename": "page-013.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-013.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/13.jpg"
+        },
+        {
+          "page": 14,
+          "filename": "page-014.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-014.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/14.jpg"
+        },
+        {
+          "page": 15,
+          "filename": "page-015.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-015.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/15.jpg"
+        },
+        {
+          "page": 16,
+          "filename": "page-016.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-016.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/16.jpg"
+        },
+        {
+          "page": 17,
+          "filename": "page-017.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-017.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/17.jpg"
+        },
+        {
+          "page": 18,
+          "filename": "page-018.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-018.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/18.jpg"
+        },
+        {
+          "page": 19,
+          "filename": "page-019.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-019.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/19.jpg"
+        },
+        {
+          "page": 20,
+          "filename": "page-020.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-020.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/20.jpg"
+        },
+        {
+          "page": 21,
+          "filename": "page-021.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-021.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/21.jpg"
+        },
+        {
+          "page": 22,
+          "filename": "page-022.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-022.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/22.jpg"
+        },
+        {
+          "page": 23,
+          "filename": "page-023.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-023.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/23.jpg"
+        },
+        {
+          "page": 24,
+          "filename": "page-024.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-024.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/24.jpg"
+        },
+        {
+          "page": 25,
+          "filename": "page-025.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-025.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/25.jpg"
+        },
+        {
+          "page": 26,
+          "filename": "page-026.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-026.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/26.jpg"
+        },
+        {
+          "page": 27,
+          "filename": "page-027.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-027.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/27.jpg"
+        },
+        {
+          "page": 28,
+          "filename": "page-028.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-028.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/28.jpg"
+        },
+        {
+          "page": 29,
+          "filename": "page-029.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-029.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/29.jpg"
+        },
+        {
+          "page": 30,
+          "filename": "page-030.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-030.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/30.jpg"
+        },
+        {
+          "page": 31,
+          "filename": "page-031.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-031.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/31.jpg"
+        },
+        {
+          "page": 32,
+          "filename": "page-032.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-032.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/32.jpg"
+        },
+        {
+          "page": 33,
+          "filename": "page-033.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-033.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/33.jpg"
+        },
+        {
+          "page": 34,
+          "filename": "page-034.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-034.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/34.jpg"
+        },
+        {
+          "page": 35,
+          "filename": "page-035.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-035.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/35.jpg"
+        },
+        {
+          "page": 36,
+          "filename": "page-036.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-036.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/36.jpg"
+        },
+        {
+          "page": 37,
+          "filename": "page-037.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-037.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/37.jpg"
+        },
+        {
+          "page": 38,
+          "filename": "page-038.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-038.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/38.jpg"
+        },
+        {
+          "page": 39,
+          "filename": "page-039.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-039.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/39.jpg"
+        },
+        {
+          "page": 40,
+          "filename": "page-040.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-128/page-040.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-128/40.jpg"
+        }
+      ],
+      "scrapedAt": "2025-10-06T05:11:47.094Z"
+    },
+    {
+      "number": "127",
+      "title": "Chapter 127",
+      "url": "https://manhwaindo.app/the-player-who-returned-10000-years-later-chapter-127/",
+      "date": "September 8, 2025",
+      "totalPages": 18,
+      "images": [
+        {
+          "page": 1,
+          "filename": "page-001.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-001.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/1.webp"
+        },
+        {
+          "page": 2,
+          "filename": "page-002.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-002.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/2.webp"
+        },
+        {
+          "page": 3,
+          "filename": "page-003.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-003.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/3.webp"
+        },
+        {
+          "page": 4,
+          "filename": "page-004.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-004.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/4.webp"
+        },
+        {
+          "page": 5,
+          "filename": "page-005.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-005.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/5.webp"
+        },
+        {
+          "page": 6,
+          "filename": "page-006.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-006.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/6.webp"
+        },
+        {
+          "page": 7,
+          "filename": "page-007.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-007.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/7.webp"
+        },
+        {
+          "page": 8,
+          "filename": "page-008.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-008.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/8.webp"
+        },
+        {
+          "page": 9,
+          "filename": "page-009.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-009.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/9.webp"
+        },
+        {
+          "page": 10,
+          "filename": "page-010.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-010.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/10.webp"
+        },
+        {
+          "page": 11,
+          "filename": "page-011.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-011.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/11.webp"
+        },
+        {
+          "page": 12,
+          "filename": "page-012.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-012.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/12.webp"
+        },
+        {
+          "page": 13,
+          "filename": "page-013.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-013.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/13.webp"
+        },
+        {
+          "page": 14,
+          "filename": "page-014.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-014.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/14.webp"
+        },
+        {
+          "page": 15,
+          "filename": "page-015.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-015.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/15.webp"
+        },
+        {
+          "page": 16,
+          "filename": "page-016.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-016.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/16.webp"
+        },
+        {
+          "page": 17,
+          "filename": "page-017.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-017.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/17.webp"
+        },
+        {
+          "page": 18,
+          "filename": "page-018.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-127/page-018.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-127/18.webp"
+        }
+      ],
+      "scrapedAt": "2025-10-06T05:11:49.225Z"
+    },
+    {
+      "number": "126",
+      "title": "Chapter 126",
+      "url": "https://manhwaindo.app/the-player-who-returned-10000-years-later-chapter-126/",
+      "date": "Agustus 24, 2025",
+      "totalPages": 21,
+      "images": [
+        {
+          "page": 1,
+          "filename": "page-001.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-001.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/1.jpg"
+        },
+        {
+          "page": 2,
+          "filename": "page-002.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-002.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/2.jpg"
+        },
+        {
+          "page": 3,
+          "filename": "page-003.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-003.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/3.jpg"
+        },
+        {
+          "page": 4,
+          "filename": "page-004.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-004.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/4.jpg"
+        },
+        {
+          "page": 5,
+          "filename": "page-005.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-005.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/5.jpg"
+        },
+        {
+          "page": 6,
+          "filename": "page-006.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-006.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/6.jpg"
+        },
+        {
+          "page": 7,
+          "filename": "page-007.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-007.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/7.jpg"
+        },
+        {
+          "page": 8,
+          "filename": "page-008.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-008.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/8.jpg"
+        },
+        {
+          "page": 9,
+          "filename": "page-009.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-009.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/9.jpg"
+        },
+        {
+          "page": 10,
+          "filename": "page-010.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-010.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/10.jpg"
+        },
+        {
+          "page": 11,
+          "filename": "page-011.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-011.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/11.jpg"
+        },
+        {
+          "page": 12,
+          "filename": "page-012.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-012.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/12.jpg"
+        },
+        {
+          "page": 13,
+          "filename": "page-013.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-013.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/13.jpg"
+        },
+        {
+          "page": 14,
+          "filename": "page-014.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-014.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/14.jpg"
+        },
+        {
+          "page": 15,
+          "filename": "page-015.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-015.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/15.jpg"
+        },
+        {
+          "page": 16,
+          "filename": "page-016.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-016.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/16.jpg"
+        },
+        {
+          "page": 17,
+          "filename": "page-017.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-017.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/17.jpg"
+        },
+        {
+          "page": 18,
+          "filename": "page-018.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-018.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/18.jpg"
+        },
+        {
+          "page": 19,
+          "filename": "page-019.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-019.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/19.jpg"
+        },
+        {
+          "page": 20,
+          "filename": "page-020.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-020.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/20.jpg"
+        },
+        {
+          "page": 21,
+          "filename": "page-021.jpg",
+          "localPath": "images/chapters/manhwaindo/The-Player-Who-Returned-10,000-Years-Later/chapter-126/page-021.jpg",
+          "originalUrl": "https://img-id.gmbr.pro/id/manga-images/t/the-player-who-returned-10000-years-later/chapter-126/21.jpg"
+        }
+      ],
+      "scrapedAt": "2025-10-06T05:11:55.888Z"
+    }
+  ],
+  "lastUpdated": "2025-10-06T05:11:56.030Z"
+}
