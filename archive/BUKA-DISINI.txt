@@ -1,0 +1,44 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                    ⚠️  PENTING - BACA INI! ⚠️                  ║
+╚═══════════════════════════════════════════════════════════════╝
+
+📂 UNTUK BUKA WEBSITE, GUNAKAN FILE INI:
+
+   ✅ index.html (di folder ini / root)
+   
+   ❌ JANGAN buka: website/index.html
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 KENAPA?
+
+File di root folder sudah dikonfigurasi dengan path yang benar:
+   - chapters/
+   - images/
+   - data/
+
+File di folder website/ menggunakan path relatif yang berbeda.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 CARA PAKAI:
+
+1. Double-click: index.html
+2. Klik card manhwa
+3. Klik "Read Chapters"
+4. Pilih chapter
+5. Enjoy! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  JIKA MASIH ERROR "Chapters Not Found":
+
+Berarti chapter belum di-download. Jalankan:
+
+   cd scrapers
+   node scrape-chapters.js 1 2
+
+Ini akan download 1 manhwa dengan 2 chapter.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
