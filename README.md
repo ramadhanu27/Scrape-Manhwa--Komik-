@@ -287,11 +287,37 @@ node scrape-chapters-manhwaindo.js [manhwa] [chapters|all]
 
 ---
 
+## 🌐 Website
+
+### ARManhwa Website
+Website untuk menampilkan data manhwa dengan UI modern:
+
+```bash
+cd website-armanhwa
+# Buka index.html di browser
+```
+
+**Features:**
+- ✅ Responsive design
+- ✅ Search & filter
+- ✅ Beautiful UI
+- ✅ Real-time stats
+- ✅ Data from ManhwaIndo
+
+**Preview:**
+- Grid layout dengan cards
+- Search by title/genre
+- Filter: All, Ongoing, Completed, Popular
+- Direct link ke manhwa
+
+---
+
 ## 📚 Documentation
 
 - `STRUKTUR-FOLDER.md` - Detailed folder structure
 - `scrapers/README.md` - Shinigami scraper docs  
 - `manhwaindo/README.md` - ManhwaIndo scraper docs
+- `website-armanhwa/README.md` - Website documentation
 
 ---
 

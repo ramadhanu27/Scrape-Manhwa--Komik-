@@ -1,0 +1,54 @@
+═══════════════════════════════════════════════════════════
+🎭 ARManhwa Website - Quick Start Guide
+═══════════════════════════════════════════════════════════
+
+📋 LANGKAH CEPAT:
+
+1. Scrape Data (jika belum ada):
+   cd manhwaindo
+   node scrape-manhwaindo.js 10 details 10
+
+2. Build Website:
+   cd website-armanhwa
+   node build-website.js
+
+3. Buka Website:
+   Double click: standalone.html
+
+✅ SELESAI! Website siap digunakan.
+
+═══════════════════════════════════════════════════════════
+
+📊 HASIL:
+- Website menampilkan 2379 manhwa
+- Search & filter berfungsi
+- Responsive design
+- No server needed
+
+═══════════════════════════════════════════════════════════
+
+🔧 TROUBLESHOOTING:
+
+Problem: "Data tidak muncul"
+Solution: 
+  1. Pastikan file ada: data/manhwaindo/manhwa-list.json
+  2. Run: node build-website.js
+  3. Buka: standalone.html (bukan index.html)
+
+Problem: "Build error"
+Solution:
+  1. Scrape data dulu: cd manhwaindo && node scrape-manhwaindo.js 10 details 10
+  2. Cek file JSON ada
+  3. Run build lagi
+
+═══════════════════════════════════════════════════════════
+
+📁 FILES:
+
+standalone.html  → Buka ini! (data embedded)
+index.html       → Butuh Live Server
+build-website.js → Script untuk build
+
+═══════════════════════════════════════════════════════════
+
+🎉 ENJOY YOUR MANHWA WEBSITE!
