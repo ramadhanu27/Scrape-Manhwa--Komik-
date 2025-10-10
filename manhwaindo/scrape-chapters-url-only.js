@@ -59,7 +59,7 @@ class ManhwaIndoChapterScraperURLOnly {
                         const chapterMatch = chapterText.match(/Chapter\s+(\d+)/i);
                         const chapterNum = chapterMatch ? chapterMatch[1] : '';
                         
-                        const dateSpan = li.querySelector('.chapterdate, .epl-date, .chapterdate');
+                        const dateSpan = li.querySelector('.chapterdate, .epl-date, span[class*="date"]');
                         const date = dateSpan ? dateSpan.textContent.trim() : '';
                         
                         if (chapterNum && url) {
@@ -120,27 +120,49 @@ class ManhwaIndoChapterScraperURLOnly {
         console.log('\n   ✅ Finished scrolling');
     }
 
-    async scrapeChapterImages(chapterUrl, chapterNum, page = null) {
+    async scrapeChapterImages(chapterUrl, chapterNum, page = null, retries = 3) {
         try {
             const targetPage = page || this.page;
             
             console.log(`   📡 Loading chapter ${chapterNum}: ${chapterUrl}`);
             
-            await targetPage.goto(chapterUrl, { 
-                waitUntil: 'networkidle2',
-                timeout: 60000 
-            });
+            // Try to load with retry mechanism
+            let lastError;
+            for (let attempt = 1; attempt <= retries; attempt++) {
+                try {
+                    await targetPage.goto(chapterUrl, { 
+                        waitUntil: 'networkidle2',
+                        timeout: 60000 
+                    });
+                    break; // Success
+                } catch (error) {
+                    lastError = error;
+                    if (attempt < retries) {
+                        console.log(`   ⚠️  Attempt ${attempt} failed, retrying...`);
+                        await new Promise(resolve => setTimeout(resolve, 2000));
+                    }
+                }
+            }
+            
+            if (lastError && retries > 0) {
+                throw lastError;
+            }
 
             await new Promise(resolve => setTimeout(resolve, 1500));
 
-            // Extract image URLs
+            // Extract image URLs (try multiple selectors)
             const images = await targetPage.evaluate(() => {
-                const imageElements = document.querySelectorAll('#readerarea img');
+                let imageElements = document.querySelectorAll('#readerarea img');
+                
+                // Fallback selectors
+                if (imageElements.length === 0) {
+                    imageElements = document.querySelectorAll('.reader-area img, .chapter-content img, #chapter-content img');
+                }
                 
                 return Array.from(imageElements).map((img, index) => ({
-                    src: img.src || img.dataset.src,
+                    src: img.src || img.dataset.src || img.getAttribute('data-lazy-src'),
                     page: index + 1
-                })).filter(img => img.src && !img.src.includes('data:image'));
+                })).filter(img => img.src && !img.src.includes('data:image') && img.src.startsWith('http'));
             });
 
             console.log(`   ✅ Found ${images.length} images`);
@@ -188,6 +210,7 @@ class ManhwaIndoChapterScraperURLOnly {
             await fs.ensureDir(this.chaptersDir);
             
             const data = {
+                manhwaSlug: slug,
                 manhwaTitle: manhwaTitle,
                 manhwaUrl: manhwaUrl,
                 totalChapters: chapters.length,
@@ -216,7 +239,7 @@ async function main() {
     const args = process.argv.slice(2);
     const manhwaCount = parseInt(args[0]) || 1;
     const maxChaptersPerManhwa = args[1] === 'null' ? null : parseInt(args[1]) || null;
-    const parallelCount = parseInt(args[2]) || 8;
+    const parallelCount = parseInt(args[2]) || 3;
 
     console.log('============================================================');
     console.log('📖 MANHWAINDO CHAPTER SCRAPER (URL ONLY - NO DOWNLOAD)');
